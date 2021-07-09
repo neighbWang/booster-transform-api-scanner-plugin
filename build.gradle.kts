@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version embeddedKotlinVersion
     kotlin("kapt") version embeddedKotlinVersion
     id("io.johnsonlee.buildprops") version "1.1.0"
-    id("io.codearte.nexus-staging") version "0.21.2"
+    id("io.codearte.nexus-staging") version "0.30.0"
     id("de.marcphilipp.nexus-publish") version "0.4.0"
 }
 
@@ -17,7 +17,7 @@ repositories {
     jcenter()
 }
 
-group = "io.neighbwang.booster"
+group = "com.neighbwang.gradle"
 version = "1.0.0"
 
 repositories {
