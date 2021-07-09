@@ -116,7 +116,7 @@ signing {
 }
 
 nexusStaging {
-    packageGroup = "io.neighbwang"
+    packageGroup = "com.neighbwang.gradle"
     username = OSSRH_USERNAME
     password = OSSRH_PASSWORD
     numberOfRetries = 50
