@@ -24,5 +24,5 @@ or configured in the `gradle.properties`:
 booster.transform.retraces=androidx/appcompat/app/AppCompatActivity.<init>()V,androidx/appcompat/app/AppCompatActivity.onCreate(Landroid/os/Bundle;)V
 ```
 
-Add run relative-task(such as `transformClassesWithBoosterForDebug` or `assembleDebug`, etc), then report will be generated as following: `${app-build}/reports/RetraceTransformer/${variant}/report.txt`
+Add run relative-task(such as `transformClassesWithBoosterForDebug` or `assembleDebug`, etc), then report will be generated as following: `${app-build}/reports/RetraceTransformer/${variant}/report.txt`.
 
