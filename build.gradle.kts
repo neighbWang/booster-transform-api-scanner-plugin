@@ -17,7 +17,7 @@ repositories {
     jcenter()
 }
 
-group = "io.johnsonlee.booster"
+group = "io.neighbwang.booster"
 version = "1.0.0"
 
 repositories {
@@ -29,9 +29,11 @@ repositories {
 
 dependencies {
     implementation(gradleApi())
+    kapt("com.google.auto.service:auto-service:1.0-rc6")
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.didiglobal.booster:booster-api:3.3.1")
+    implementation("com.didiglobal.booster:booster-transform-asm:3.3.1")
     compileOnly("com.android.tools.build:gradle:3.0.0")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
@@ -114,7 +116,7 @@ signing {
 }
 
 nexusStaging {
-    packageGroup = "io.johnsonlee"
+    packageGroup = "io.neighbwang"
     username = OSSRH_USERNAME
     password = OSSRH_PASSWORD
     numberOfRetries = 50
