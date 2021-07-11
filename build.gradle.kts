@@ -18,7 +18,7 @@ repositories {
 }
 
 group = "com.neighbwang.gradle"
-version = "1.0.0"
+version = "1.1.0"
 
 repositories {
     mavenLocal()
@@ -85,12 +85,12 @@ publishing {
             pom.withXml {
                 asNode().apply {
                     appendNode("name", project.name)
-                    appendNode("url", "https://github.com/johnsonlee/${rootProject.name}")
+                    appendNode("url", "https://github.com/neighbWang/${rootProject.name}")
                     appendNode("description", project.description ?: project.name)
                     appendNode("scm").apply {
-                        appendNode("connection", "scm:git:git://github.com/johnsonlee/${rootProject.name}.git")
-                        appendNode("developerConnection", "scm:git:git@github.com:johnsonlee/${rootProject.name}.git")
-                        appendNode("url", "https://github.com/johnsonlee/${rootProject.name}")
+                        appendNode("connection", "scm:git:git://github.com/neighbWang/${rootProject.name}.git")
+                        appendNode("developerConnection", "scm:git:git@github.com:neighbWang/${rootProject.name}.git")
+                        appendNode("url", "https://github.com/neighbWang/${rootProject.name}")
                     }
                     appendNode("licenses").apply {
                         appendNode("license").apply {
@@ -100,9 +100,9 @@ publishing {
                     }
                     appendNode("developers").apply {
                         appendNode("developer").apply {
-                            appendNode("id", "johnsonlee")
-                            appendNode("name", "Johnson Lee")
-                            appendNode("email", "g.johnsonlee@gmail.com")
+                            appendNode("id", "neighbWang")
+                            appendNode("name", "Zhiguo Wang")
+                            appendNode("email", "wangzhiguo13120140@163.com")
                         }
                     }
                 }
